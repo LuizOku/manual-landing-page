@@ -1,7 +1,5 @@
 import React from 'react';
 
-const Questionnaire = () => {
-  return <div />;
-}
+const Questionnaire = () => <div />;
 
 export default Questionnaire;

@@ -1,7 +1,11 @@
 import React from 'react';
 
-const LandingPage = () => {
-  return <div />;
-}
+import SectionOne from './SectionOne';
+
+const LandingPage = () => (
+  <>
+    <SectionOne />
+  </>
+);
 
 export default LandingPage;
