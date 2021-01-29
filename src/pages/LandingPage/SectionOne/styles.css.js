@@ -3,10 +3,8 @@ import backSectionOne from '../../../assets/hair-cat-header.png';
 
 export const Section = styled.section`
   background: url(${backSectionOne}) no-repeat;
-  background-position: center;
-  z-index: 100;
-  padding-left: 90px;
-  padding-top: 30px;
+  background-position: right;
+  padding: 30px 90px 90px 90px;
 `;
 
 export const LeftSide = styled.div`
@@ -24,13 +22,11 @@ export const LeftSide = styled.div`
     font-size: 82px;
     line-height: 98px;
     letter-spacing: 0;
-    z-index: 2;
   }
   span {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0;
-    z-index: 2;
-    margin: 30px 0;
+    margin: 40px 0;
   }
 `;
