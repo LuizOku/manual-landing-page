@@ -8,26 +8,26 @@ const SectionTwo = () => (
   <Section>
     <h2>What we can help with</h2>
     <Content>
-      <img src={HairPhoto} alt="hair" />
+      <img data-testid="hair-photo" src={HairPhoto} alt="hair" />
       <TextContent imgLeft>
         <div>01</div>
         <h4>HAIR LOSS</h4>
         <h3>
           Hair loss needn’t be
-          <br />
+          {'\n'}
           irreversible. We can help!
         </h3>
         <span>
           Hair loss needn’t be irreversible. There’s a
-          <br />
+          {'\n'}
           scientifically proven way that’s most effective in
-          <br />
+          {'\n'}
           keeping and regrowing your hair. It’s all to do with
-          <br />
+          {'\n'}
           blocking a pesky hormone called DHT. That’s the bad
-          <br />
+          {'\n'}
           guy behind hair loss. And you can keep him at bay.
-          <br />
+          {'\n'}
           The choice is yours.
         </span>
       </TextContent>
@@ -38,20 +38,20 @@ const SectionTwo = () => (
         <h4>Erectile Dysfunction</h4>
         <h3>
           Erections can be a tricky thing.
-          <br />
+          {'\n'}
           But no need to feel down!
         </h3>
         <span>
           There are plenty of reasons why you might be having
-          <br />
+          {'\n'}
           difficulty in the erection department. We can help
-          <br />
+          {'\n'}
           you figure out possible reasons why. And prescribe a
-          <br />
+          {'\n'}
           pill if needed.
         </span>
       </TextContent>
-      <img src={SexPhoto} alt="sex" />
+      <img data-testid="sex-photo" src={SexPhoto} alt="sex" />
     </Content>
   </Section>
 );

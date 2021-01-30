@@ -5,7 +5,7 @@ import { StyledButton } from './styles.css';
 
 const Button = ({
   background, textColor, width, ...rest
-}) => <StyledButton background={background} textColor={textColor} width={width} {...rest} />;
+}) => <StyledButton data-testid="button" background={background} textColor={textColor} width={width} {...rest} />;
 
 Button.propTypes = {
   background: PropTypes.string,

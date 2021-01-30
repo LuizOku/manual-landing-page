@@ -11,13 +11,13 @@ const SectionThree = () => (
   <Section>
     <Content>
 
-      <img src={Symblol} alt="Symblol" />
+      <img data-testid="footer-symblol" src={Symblol} alt="Symblol" />
       <ColumnsContainer>
         <LinkColumn>
           <span>
             PRODUCT
           </span>
-          <ul>
+          <ul data-testid="ul-product">
             <li><Link to="popular">Popular</Link></li>
             <li><Link to="trending">Trending</Link></li>
             <li><Link to="guided">Guided</Link></li>
@@ -28,7 +28,7 @@ const SectionThree = () => (
           <span>
             COMPANY
           </span>
-          <ul>
+          <ul data-testid="ul-company">
             <li><Link to="releases">Press Releases</Link></li>
             <li><Link to="mission">Mission</Link></li>
             <li><Link to="strategy">Strategy</Link></li>
@@ -39,7 +39,7 @@ const SectionThree = () => (
           <span>
             INFO
           </span>
-          <ul>
+          <ul data-testid="ul-info">
             <li><Link to="support">Support</Link></li>
             <li><Link to="customer">Customer Service</Link></li>
             <li><Link to="guide">Get Started Guide</Link></li>
@@ -50,7 +50,7 @@ const SectionThree = () => (
           <span>
             FOLLOW US
           </span>
-          <ul>
+          <ul data-testid="ul-follow">
             <li><a aria-label="Facebook" href="https://www.facebook.com/manual.com.br" target="_blank" rel="noreferrer"><FaFacebookF size={20} /></a></li>
             <li><a aria-label="Twitter" href="https://twitter.com/MenofManual" target="_blank" rel="noreferrer"><FaTwitter size={20} /></a></li>
             <li><a aria-label="Linkedin" href="https://www.linkedin.com/company/manualco" target="_blank" rel="noreferrer"><FaLinkedin size={20} /></a></li>

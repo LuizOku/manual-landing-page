@@ -12,17 +12,17 @@ const SectionOne = () => {
       <LeftSide>
         <h1>
           BE GOOD
-          <br />
+          {'\n'}
           TO YOURSELF
         </h1>
         <span>
           We’re working around the clock to bring you a
-          <br />
+          {'\n'}
           holistic approach to your wellness. From top to
-          <br />
+          {'\n'}
           bottom, inside and out.
         </span>
-        <Button onClick={() => history.push('/quiz')} width="200px">TAKE THE QUIZ</Button>
+        <Button data-testid="quiz-button" onClick={() => history.push('/quiz')} width="200px">TAKE THE QUIZ</Button>
       </LeftSide>
     </Section>
   );

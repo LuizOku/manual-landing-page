@@ -6,9 +6,10 @@
   "plugins": [
     "react",
     "jsx-a11y",
-    "import"
+    "import",
+    "jest"
   ],
-  "extends": "airbnb",
+  "extends": ["plugin:jest/recommended", "airbnb"],
   "rules": {
     "react/jsx-filename-extension": [
       "error",

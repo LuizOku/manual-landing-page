@@ -39,7 +39,7 @@ const Questionnaire = () => {
   };
 
   return (
-    <Container>
+    <Container data-testid="quiz-container">
       {result ? (
         <>
           <h2>{result}</h2>
