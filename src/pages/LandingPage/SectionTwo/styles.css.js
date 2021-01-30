@@ -52,6 +52,8 @@ export const TextContent = styled.div`
     z-index: 2;
   }
   h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 12px;
     letter-spacing: 2.4px;
     color: #34d1d1;
@@ -60,6 +62,7 @@ export const TextContent = styled.div`
     z-index: 2;
   }
   span {
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0;

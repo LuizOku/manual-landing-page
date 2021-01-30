@@ -28,6 +28,8 @@ export const LinkColumn = styled.div`
     color: #34d1d1;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
   ul {
     margin-top: 17px;
@@ -57,6 +59,7 @@ export const Footer = styled.footer`
   border-top: 1px solid #6c6c6c4d;
   margin-top: 66px;
   span {
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0;

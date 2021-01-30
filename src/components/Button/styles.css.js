@@ -11,6 +11,8 @@ export const StyledButton = styled.button`
   justify-content: center;
   align-items: center;
   letter-spacing: 2.4px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 12px;
   font-weight: bold;
 `;

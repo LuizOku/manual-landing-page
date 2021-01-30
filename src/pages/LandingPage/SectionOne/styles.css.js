@@ -5,6 +5,9 @@ export const Section = styled.section`
   background: url(${backSectionOne}) no-repeat;
   background-position: right;
   padding: 30px 90px 90px 90px;
+  @media only screen and (max-width: 1400px) {
+    background-position: center;
+  }
 `;
 
 export const LeftSide = styled.div`
@@ -16,6 +19,8 @@ export const LeftSide = styled.div`
     font-size: 82px;
     line-height: 98px;
     letter-spacing: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
   }
   span {
     font-size: 18px;

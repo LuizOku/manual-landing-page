@@ -10,6 +10,7 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100%;
     scroll-snap-align: center;
+    min-width: 880px;
   }
   body {
     font: 14px sans-serif;

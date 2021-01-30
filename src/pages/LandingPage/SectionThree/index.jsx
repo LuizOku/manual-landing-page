@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -52,9 +51,9 @@ const SectionThree = () => (
             FOLLOW US
           </span>
           <ul>
-            <li><a href="https://www.facebook.com/manual.com.br" target="_blank" rel="noreferrer"><FaFacebookF size={20} /></a></li>
-            <li><a href="https://twitter.com/MenofManual" target="_blank" rel="noreferrer"><FaTwitter size={20} /></a></li>
-            <li><a href="https://www.linkedin.com/company/manualco" target="_blank" rel="noreferrer"><FaLinkedin size={20} /></a></li>
+            <li><a aria-label="Facebook" href="https://www.facebook.com/manual.com.br" target="_blank" rel="noreferrer"><FaFacebookF size={20} /></a></li>
+            <li><a aria-label="Twitter" href="https://twitter.com/MenofManual" target="_blank" rel="noreferrer"><FaTwitter size={20} /></a></li>
+            <li><a aria-label="Linkedin" href="https://www.linkedin.com/company/manualco" target="_blank" rel="noreferrer"><FaLinkedin size={20} /></a></li>
           </ul>
 
         </LinkColumn>
