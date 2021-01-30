@@ -5,7 +5,7 @@ import HairPhoto from '../../../assets/hair-photo-1-2-x.png';
 import SexPhoto from '../../../assets/sex-photo-1-2-x.jpg';
 
 const SectionTwo = () => (
-  <Section id="sec-one">
+  <Section>
     <h2>What we can help with</h2>
     <Content>
       <img src={HairPhoto} alt="hair" />

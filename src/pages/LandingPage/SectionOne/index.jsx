@@ -1,13 +1,11 @@
 import React from 'react';
-import Symblol from '../../../assets/manual-symblol.png';
 
 import { Button } from '../../../components';
 import { Section, LeftSide } from './styles.css';
 
 const SectionOne = () => (
-  <Section id="sec-one">
+  <Section>
     <LeftSide>
-      <img src={Symblol} alt="Symblol" />
       <h1>
         BE GOOD
         <br />

@@ -12,12 +12,6 @@ export const LeftSide = styled.div`
   flex-direction: column;
   align-self: center;
   max-width: 60%;
-  img{
-    width: 40px;
-    height: 38px;
-    margin-bottom: 90px;
-  }
-
   h1 {
     font-size: 82px;
     line-height: 98px;
