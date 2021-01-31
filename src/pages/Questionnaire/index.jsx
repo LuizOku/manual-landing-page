@@ -18,7 +18,6 @@ const Questionnaire = () => {
       try {
         const response = await getQuestions();
         setQuestions(response.questions);
-        setQuestionNumber(0);
       } catch (error) {
         console.error(error);
       }
@@ -48,7 +47,7 @@ const Questionnaire = () => {
         </>
       ) : (
         <>
-          <h2>
+          <h2 data-testid="quiz-title">
             {questions[questionNumber]?.question}
           </h2>
           <AnswerContainer>

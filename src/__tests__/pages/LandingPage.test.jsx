@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 
 import React from 'react';
-// import LandingPage from '../../pages/LandingPage';
 import SectionOne from '../../pages/LandingPage/SectionOne';
 import SectionTwo from '../../pages/LandingPage/SectionTwo';
 import SectionThree from '../../pages/LandingPage/SectionThree';
