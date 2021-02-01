@@ -38,7 +38,7 @@ describe('Testing the App root', () => {
       userEvent.click(quizBackButton);
     });
 
-    const titleSectionOneLabel = screen.getByText(/BE GOOD TO YOURSELF/);
+    const titleSectionOneLabel = screen.getByText((content) => content.startsWith('BE GOOD') && content.endsWith('TO YOURSELF'));
     expect(titleSectionOneLabel).toBeInTheDocument();
   });
 });

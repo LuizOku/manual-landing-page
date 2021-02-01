@@ -14,20 +14,20 @@ const SectionTwo = () => (
         <h4>HAIR LOSS</h4>
         <h3>
           Hair loss needn’t be
-          {'\n'}
+          <br />
           irreversible. We can help!
         </h3>
         <span>
           Hair loss needn’t be irreversible. There’s a
-          {'\n'}
+          <br />
           scientifically proven way that’s most effective in
-          {'\n'}
+          <br />
           keeping and regrowing your hair. It’s all to do with
-          {'\n'}
+          <br />
           blocking a pesky hormone called DHT. That’s the bad
-          {'\n'}
+          <br />
           guy behind hair loss. And you can keep him at bay.
-          {'\n'}
+          <br />
           The choice is yours.
         </span>
       </TextContent>
@@ -38,16 +38,16 @@ const SectionTwo = () => (
         <h4>Erectile Dysfunction</h4>
         <h3>
           Erections can be a tricky thing.
-          {'\n'}
+          <br />
           But no need to feel down!
         </h3>
         <span>
           There are plenty of reasons why you might be having
-          {'\n'}
+          <br />
           difficulty in the erection department. We can help
-          {'\n'}
+          <br />
           you figure out possible reasons why. And prescribe a
-          {'\n'}
+          <br />
           pill if needed.
         </span>
       </TextContent>
