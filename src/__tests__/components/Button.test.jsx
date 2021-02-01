@@ -10,4 +10,11 @@ describe('Testing Button Component', () => {
 
     expect(buttonElement).toBeInTheDocument();
   });
+
+  it('should be able to match snapshot', () => {
+    render(<Button />);
+    const buttonElement = screen.getByTestId('button');
+
+    expect(buttonElement).toMatchSnapshot();
+  });
 });

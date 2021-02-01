@@ -12,4 +12,11 @@ describe('Testing Header Component', () => {
     expect(headerElement).toBeInTheDocument();
     expect(headerSymblolElement).toBeInTheDocument();
   });
+
+  it('should be able to match snapshot', () => {
+    render(<Header />);
+    const headerElement = screen.getByTestId('header');
+
+    expect(headerElement).toMatchSnapshot();
+  });
 });

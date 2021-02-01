@@ -32,7 +32,7 @@ const Questionnaire = () => {
     }
     const isBadNews = [...answers, answer].find((an) => an === true);
     if (isBadNews) {
-      return setResult('Unfortunately, we are unable to prescribe this medication for you. This is because finasteride can alter the PSA levels, which maybe used to monitor for cancer. You should discuss this further with your GP or specialist if you would still like this medication');
+      return setResult('Unfortunately, we are unable to prescribe this medication for you. This is because finasteride can alter the PSA levels, which maybe used to monitor for cancer. You should discuss this further with your GP or specialist if you would still like this medication.');
     }
     return setResult('Great news! We have the perfect treatment for your hair loss. Proceed to www.manual.co, and prepare to say hello to your new hair!');
   };
@@ -41,16 +41,16 @@ const Questionnaire = () => {
     <Container data-testid="quiz-container">
       {result ? (
         <>
-          <h2>{result}</h2>
-          <Button onClick={() => history.push('/')} width="300px">BACK TO THE HOME PAGE</Button>
+          <h2 data-testid="quiz-result">{result}</h2>
+          <Button data-testid="quiz-back-button" onClick={() => history.push('/')} width="300px">BACK TO THE HOME PAGE</Button>
 
         </>
       ) : (
         <>
-          <h2 data-testid="quiz-title">
+          <h2 data-testid="quiz-question">
             {questions[questionNumber]?.question}
           </h2>
-          <AnswerContainer>
+          <AnswerContainer data-testid="quiz-options">
             {questions[questionNumber]?.options.map((op) => (
               <AnswerOption
                 key={Object.keys(op)[0]}
