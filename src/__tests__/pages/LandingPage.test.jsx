@@ -9,10 +9,8 @@ import SectionThree from '../../pages/LandingPage/SectionThree';
 describe('Testing the first section of the LandingPage', () => {
   it('should be able to show the elements of the first section', () => {
     render(<SectionOne />);
-    const titleLabel = screen.getByText(/BE GOOD TO YOURSELF/);
-    const descriptionLabel = screen.getByText(
-      /We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out./,
-    );
+    const titleLabel = screen.getByText((content) => content.startsWith('BE GOOD') && content.endsWith('TO YOURSELF'));
+    const descriptionLabel = screen.getByText((content) => content.startsWith('We’re working around the clock to bring you a') && content.endsWith('bottom, inside and out.'));
     const quizButton = screen.getByTestId('quiz-button');
 
     expect(titleLabel).toBeInTheDocument();
@@ -26,10 +24,10 @@ describe('Testing the second section of the LandingPage', () => {
     render(<SectionTwo />);
     const hairTitleLabel = screen.getByText(/HAIR LOSS/);
     const erectileTitleLabel = screen.getByText(/Erectile Dysfunction/);
-    const hairSubLabel = screen.getByText(/Hair loss needn’t be irreversible. We can help!/);
-    const erectileSubLabel = screen.getByText(/Erections can be a tricky thing. But no need to feel down!/);
-    const hairDescriptionLabel = screen.getByText(/Hair loss needn’t be irreversible. There’s a scientifically proven way that’s most effective in keeping and regrowing your hair. It’s all to do with blocking a pesky hormone called DHT. That’s the bad guy behind hair loss. And you can keep him at bay. The choice is yours./);
-    const erectileDescriptionLabel = screen.getByText(/There are plenty of reasons why you might be having difficulty in the erection department. We can help you figure out possible reasons why. And prescribe a pill if needed./);
+    const hairSubLabel = screen.getByText((content) => content.startsWith('Hair loss needn’t be') && content.endsWith('irreversible. We can help!'));
+    const erectileSubLabel = screen.getByText((content) => content.startsWith('Erections can be a tricky thing.') && content.endsWith('But no need to feel down!'));
+    const hairDescriptionLabel = screen.getByText((content) => content.startsWith('Hair loss needn’t be irreversible. There’s a') && content.endsWith('The choice is yours.'));
+    const erectileDescriptionLabel = screen.getByText((content) => content.startsWith('There are plenty of reasons why you might be having') && content.endsWith('pill if needed.'));
     const hairPhoto = screen.getByTestId('hair-photo');
     const sexPhoto = screen.getByTestId('sex-photo');
 
